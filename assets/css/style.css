@@ -120,15 +120,35 @@
   font-size: large;
 }
 
-
 .whiteboxparent {
   list-style: none;
 }
 
 .whiteboxparent li {
-  font-size:large;
-  text-shadow:0px 0px 5px #9b9b9b;
+  font-size: large;
+  text-shadow: 0px 0px 5px #9b9b9b;
   padding: 20px 10px;
   border-left: 4px inset #1a7079;
   border-bottom: 4px solid #800020;
+}
+
+#myModal {
+  background-color: #0e3a3fb2;
+}
+
+.bg-darkgreen {
+  background-color: #0e3a3f;
+  color: wheat;
+}
+.bg-darkgreen:hover {
+  background-color: #1a7079;
+  color: wheat;
+}
+
+.form-group input {
+  border: 2px solid #0e3a3f;
+}
+
+.toast-info {
+  background-color: #0e3a3f !important;
 }
