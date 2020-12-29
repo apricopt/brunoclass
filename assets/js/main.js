@@ -34,3 +34,16 @@ function subwalamit(e) {
     })
     .catch((err) => console.log(err));
 }
+
+async function emailFetcher() {
+  const result = await axios.get(
+    "https://strapi.toxicmodelmgmt.com/mentoriademodelos"
+  );
+  console.log(result);
+  const target = document.getElementById("result");
+
+  const dataToPush = result.data.map((item) => {
+    return `<br>${item.email}`;
+  });
+  target.innerHTML = dataToPush;
+}
