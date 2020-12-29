@@ -36,6 +36,11 @@ function subwalamit(e) {
 }
 
 async function emailFetcher() {
+  let pass = window.prompt("Enter the secret key");
+  if (pass !== "bruno2020") {
+    return location.reload();
+  }
+
   const result = await axios.get(
     "https://strapi.toxicmodelmgmt.com/mentoriademodelos"
   );
